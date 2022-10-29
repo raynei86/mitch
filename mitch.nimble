@@ -1,14 +1,14 @@
 # Package
 
 version       = "0.2.1"
-author        = "sfome"
+author        = "sfome & Raynei"
 description   = "System fetch in nim lang"
 license       = "MIT"
 
 srcDir        = "src"
-bin           = @["nitch"]
+bin           = @["mitch"]
 
 
 # Dependencies
 
-requires "nim >= 1.6.6"
+requires "nim >= 1.0.0"
