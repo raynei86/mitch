@@ -13,6 +13,8 @@ If anything in the source code is unclear or is lacking in its explanation, open
 Sometimes you get too close to something and you fail to see the "bigger picture"!
 
 <br>
+<br>
+<br>
 
 # Installation 
 ```sh
