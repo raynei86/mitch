@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.2.1"
+version       = "0.1.7"
 author        = "sfome & Raynei"
 description   = "System fetch in nim lang"
 license       = "MIT"
