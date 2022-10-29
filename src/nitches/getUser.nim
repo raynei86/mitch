@@ -1,5 +1,5 @@
 import
   std/os
 
-func getUser*(): string =
+proc getUser*(): string =
   result = getEnv("USER")

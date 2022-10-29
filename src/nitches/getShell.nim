@@ -1,5 +1,5 @@
 import
   std/[strutils, os]
 
-func getShell*(): string =
+proc getShell*(): string =
   result = getEnv("SHELL").split("/")[^1]
