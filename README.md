@@ -6,7 +6,6 @@
 
 <h3>
   incredibly fast system fetch written in <code>nim👑</code>
-  Unfortunately named fork of mitch.
 </h3>
 <br>
 
