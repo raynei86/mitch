@@ -2,33 +2,22 @@
 
 <img src="https://cdn.discordapp.com/attachments/955362477137362954/996769449480826971/2022-07-13_16-25.png" width="350px">
 
-# `NiTch`
+# `MiTch`
 
 <h3>
   incredibly fast system fetch written in <code>nim👑</code>
+  Unfortunately named fork of mitch.
 </h3>
 <br>
-
-![Maintenance](https://shields.io/maintenance/yes/2022?style=for-the-badge)
-![License](https://shields.io/github/license/unxsh/nitch?style=for-the-badge)
-![Commits](https://shields.io/github/commit-activity/m/unxsh/nitch?style=for-the-badge)
-
-![GitHub Repo stars](https://img.shields.io/github/stars/unxsh/nitch?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/unxsh/nitch?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/unxsh/nitch?style=for-the-badge)
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/unxsh/nitch?style=for-the-badge)
-
-</div>
 
 # Description 📖
 
 <img src="https://media.discordapp.net/attachments/955362477137362954/997839005460725841/2022-07-16_15-15_1.png" width="42%" align="right">
 
-`nitch` is a small and incredibly fast system fetch written fully in `nim👑` without any dependencies, on my pc
+`mitch` is a small and incredibly fast system fetch written fully in `nim👑` without any dependencies, on my pc
 it executes in around 1.70 miliseconds.
 
-The source code of `nitch` is highly documented and I hope it will act as a learning resource for nim
+The source code of `mitch` is highly documented and I hope it will act as a learning resource for nim
 and linux systems architecture
 
 If anything in the source code is unclear or is lacking in its explanation, open an issue. Sometimes you get too close to something and you fail to see the "bigger picture"!
@@ -42,12 +31,12 @@ why `nim👑`? because it's fast and simple
 
 # Installation ☁️
 ```fish
-wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
+wget https://raw.githubusercontent.com/raynei86/mitch/main/setup.sh && sh setup.sh
 ```
 
 # Usage 🪨
 ```
-nitch
+mitch
 ```
 
 flags:
@@ -60,17 +49,17 @@ flags:
 <br>
 
 # Configuration ⚙️
-### `nitch` is configured by changing the source code
+### `mitch` is configured by changing the source code
 ### `src/funcs/drawing.nim` - config file
 ```nim
 import std/terminal       # import standard terminal lib
 import getDistroId        # import to get distro id through /etc/os-release
 #import ../assets/logos   # uncomment if you use your own logo
-import ../nitches/[getUser, getHostname,
+import ../mitches/[getUser, getHostname,
                    getDistro, getKernel,
                    getUptime, getShell,
                    getPkgs, getRam,
-                   getLogo, getLogoColor]  # import nitches to get info about user system
+                   getLogo, getLogoColor]  # import mitches to get info about user system
 
 # the main function for drawing fetch
 proc drawInfo*() =
@@ -79,7 +68,7 @@ proc drawInfo*() =
 
   let  # logo and it color
     logoColor: ForegroundColor = getLogoColor(distroId)  # color for logo
-    defaultLogo: string  = getLogo(distroId)             # default logo from nitch/src/assets/logos
+    defaultLogo: string  = getLogo(distroId)             # default logo from mitch/src/assets/logos
 
   const  # icons before cotegores
     userIcon: string   = " "  # recomended: " " or "|>"
@@ -150,11 +139,11 @@ proc drawInfo*() =
 
 ### 1) clone repo
 ```fish
-git clone https://github.com/unxsh/nitch.git
+git clone https://github.com/unxsh/mitch.git
 ```
-### 2) change dir to `nitch`
+### 2) change dir to `mitch`
 ```fish
-cd nitch/
+cd mitch/
 ```
 
 ### 3) build program with `nimble`
@@ -167,10 +156,10 @@ After that you will get a ready-made binary file in the root directory of the pr
 
 # File architecture 📁
 ```fish
-nitch
+mitch
   ├── LICENSE
-  ├── nitch
-  ├── nitch.nimble
+  ├── mitch
+  ├── mitch.nimble
   ├── README.md
   ├── src
   │   ├── assets
@@ -183,7 +172,7 @@ nitch
   │   │   ├── packages
   │   │   │   └── getPacmanPkgs.nim
   │   │   └── perform.nim
-  │   ├── nitches
+  │   ├── mitches
   │   │   ├── getDistro.nim
   │   │   ├── getHostname.nim
   │   │   ├── getKernel.nim
@@ -192,8 +181,8 @@ nitch
   │   │   ├── getShell.nim
   │   │   ├── getUptime.nim
   │   │   └── getUser.nim
-  │   ├── nitch.nim
-  │   └── nitch.nim.cfg
+  │   ├── mitch.nim
+  │   └── mitch.nim.cfg
   └── templates
       ├── cfgParser
       ├── cfgParser.nim
@@ -215,3 +204,4 @@ nitch
 - [paleofetch](https://github.com/ss7m/paleofetch)
 - [rxfetch](https://github.com/Mangeshrex/rxfetch)
 - [nerdfetch](https://github.com/ThatOneCalculator/NerdFetch)
+- [nitch](https://github.com/unxsh/nitch) - The original repo this was forked from
