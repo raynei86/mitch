@@ -19,7 +19,7 @@ func getLogo*(distroId: string): tuple =
       (fgYellow, centosLogo),
       (fgRed, redhatLogo),
       (fgMagenta, gentooLogo),
-      (fgMagenta, endeavourosLogo)
+      (fgMagenta, endeavourosLogo),
       (fgBlue, garudaLogo)
     ]
 
