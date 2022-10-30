@@ -3,6 +3,6 @@ import
 
 proc getRpmPkgs*(): string =
   let
-    count = osproc.execCmdEx("rpm -qa")[0]
+    count = osproc.execCmdEx("rpm -qa").output
 
   result = $(count.split("\n").len - 1)

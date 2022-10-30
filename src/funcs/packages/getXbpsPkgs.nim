@@ -3,6 +3,6 @@ import
 
 proc getXbpsPkgs*(): string =
   let
-    count = osproc.execCmdEx("xbps-query -l")[0]
+    count = osproc.execCmdEx("xbps-query -l").output
 
   result = $(count.split("\n").len - 1)

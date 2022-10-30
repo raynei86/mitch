@@ -3,6 +3,6 @@ import
 
 proc getPacmanPkgs*(): string =
   let
-    count = osproc.execCmdEx("pacman -Q")[0]
+    count = osproc.execCmdEx("pacman -Q").output
 
   result = $(count.split("\n").len - 1)
