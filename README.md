@@ -19,7 +19,7 @@ Sometimes you get too close to something and you fail to see the "bigger picture
 wget https://raw.githubusercontent.com/raynei86/mitch/main/setup.sh && sh setup.sh
 ```
 
-# Usage 🪨
+# Usage
 ```
 mitch
 ```
@@ -143,8 +143,8 @@ After that you will get a ready-made binary file in the root directory of the pr
 
 <br>
 
-# File architecture 📁
-```fish
+# File architecture 
+```sh
 mitch
   ├── LICENSE
   ├── mitch
@@ -187,7 +187,7 @@ mitch
   7 directories, 30 files
 ```
 
-# Thanks for ideas & examples 💬
+# Thanks for ideas & examples
 - [pfetch](https://github.com/dylanaraps/pfetch/)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [paleofetch](https://github.com/ss7m/paleofetch)
